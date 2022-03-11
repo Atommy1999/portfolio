@@ -18,10 +18,10 @@
   @apply flex items-center font-bold mr-4;
 }
 .input {
-  @apply w-full py-1 border-2 rounded px-2 my-1;
+  @apply w-full py-1 border-2 border-slate-200 rounded px-2 my-1 focus:outline-slate-400;
 }
 .textarea {
-  @apply w-full h-32 py-1 border-2 rounded px-2 mb-2;
+  @apply w-full h-32 py-1 border-2 border-slate-200 rounded px-2 mb-2 my-1  focus:outline-slate-400;
 }
 
 @layer base {

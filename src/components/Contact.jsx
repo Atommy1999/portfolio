@@ -1,6 +1,10 @@
 import React from "react"
 
 const Contact = () => {
+  const onSubmit = () => {
+    alert("送信が完了しました")
+  }
+
   return (
     <div className="mb-20">
       <h2 className="contactHeader heading" id="contact">
@@ -47,6 +51,7 @@ const Contact = () => {
         <button
           className="relative top-0 bg-gold text-white w-24 mt-2 p-1 place-self-end rounded drop-shadow-md transition-all duration-75 hover:top-px hover:drop-shadow-none"
           type="submit"
+          onClick={onSubmit}
         >
           Submit
         </button>
