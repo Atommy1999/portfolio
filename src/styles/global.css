@@ -1,0 +1,38 @@
+@tailwind base;
+
+@tailwind components;
+
+.content {
+  @apply my-20;
+}
+.heading {
+  @apply font-orbitron font-bold text-3xl mb-5;
+}
+.subheading {
+  @apply font-orbitron font-bold text-gold text-xl mt-5 mb-3;
+}
+.menu {
+  @apply text-black underline;
+}
+
+@layer base {
+  * {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+  }
+  code {
+    padding: 0.2em 0.3em;
+    margin: 0 0.2em;
+    border-radius: 5px;
+    background: #f1f2f3;
+    color: #404040;
+    font-size: 0.9em;
+  }
+  p {
+    line-height: 1.7em;
+  }
+}
+
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Orbitron:wght@400;700;900&family=Ubuntu+Mono:wght@700&display=swap");
