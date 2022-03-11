@@ -3,7 +3,9 @@ import { Link } from "gatsby"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import LOGO_IMG from "../../static/logo.svg"
 
-const Header = () => {
+const Header = ({ isTop }) => {
+  const menuDisplay = isTop ? "" : "hidden"
+
   return (
     <div className="flex justify-between items-cen my-2 w-full">
       <Link to="/">
@@ -18,7 +20,7 @@ const Header = () => {
           </span>
         </div>
       </Link>
-      <div className="flex items-center gap-2 lg:gap-4">
+      <div className={`flex items-center gap-2 lg:gap-4 ${menuDisplay}`}>
         <AnchorLink offset="50" href="#works">
           <p className="font-bold lg:text-lg hover:underline">Works</p>
         </AnchorLink>

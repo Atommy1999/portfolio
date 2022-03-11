@@ -1,7 +1,11 @@
 import React from "react"
 
 const Layout = ({ children }) => {
-  return <div className="container mx-auto px-4">{children}</div>
+  return (
+    <div className="box-border relative container pb-8 mx-auto px-4 min-h-screen">
+      {children}
+    </div>
+  )
 }
 
 export default Layout
