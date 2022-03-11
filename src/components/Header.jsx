@@ -5,7 +5,7 @@ import LOGO_IMG from "../../static/logo.svg"
 
 const Header = () => {
   return (
-    <div className="flex justify-between my-2 w-full">
+    <div className="flex justify-between items-cen my-2 w-full">
       <Link to="/">
         <div className="flex flex-row items-center">
           <img

@@ -11,6 +11,9 @@ module.exports = {
         gold: "#caa846",
         silver: "#eeeeee",
       },
+      gridTemplateColumns: {
+        contact: "20% 80%",
+      },
     },
   },
   plugins: [],

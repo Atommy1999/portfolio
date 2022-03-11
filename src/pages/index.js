@@ -6,6 +6,7 @@ import Hero from "../components/Hero"
 import Header from "../components/Header"
 import Works from "../components/Works"
 import Profile from "../components/Profile"
+import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 
 export default function Home() {
@@ -34,6 +35,7 @@ export default function Home() {
         <Hero />
         <Works />
         <Profile />
+        <Contact />
         <Footer />
       </Layout>
     </>
