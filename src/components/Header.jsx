@@ -13,7 +13,7 @@ const Header = () => {
             className="w-12 h-12 p-1 rounded-full lg:w-16 lg:h-16"
             alt="logo"
           ></img>
-          <span className="font-orbitron text-xl font-black ml-1 lg:text-2xl">
+          <span className="font-orbitron text-xl font-black ml-1 lg:text-2xl lg:ml-2">
             Atommy
           </span>
         </div>
