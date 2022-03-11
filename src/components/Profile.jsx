@@ -6,27 +6,40 @@ const Profile = () => {
       <h2 className="heading" id="profile">
         Profile
       </h2>
-      <p>
-        ご覧いただきありがとうございます。本サイトは私のこれまでの制作物を紹介するポートフォリオサイトです。
-      </p>
       <h3 className="subheading">About Me</h3>
       <p>
         大阪の大学に通う大学4年生。
-        プログラミングに興味を持ちで独学で勉強しているうちにWebプログラミングにはまり、
+        高校生の頃にプログラミングに興味を持ち、独学で勉強しているうちにWebプログラミングが好きになりました。
         現在は<code>JavaScript</code>のフロントエンドフレームワークである
         <code>React</code>
         をメインに学習しています。
-        今後の目標は、APIの実装をできるようになることや
-        <code>React Native</code>
-        でアプリをリリースすること。
+        <br />
+        音楽が趣味で、フルートとユーフォニアムを11年ほど吹いています。
       </p>
 
       <h3 className="subheading">Skill</h3>
       <ul>
-        <li>HTML5 / CSS3</li>
-        <li>JavaScript / React</li>
-        <li>Illustrator / Photoshop</li>
-        <li>Python</li>
+        <li>
+          <i class="devicon-html5-plain colored"></i>HTML5 /{" "}
+          <i class="devicon-css3-plain colored"></i>CSS3
+        </li>
+        <li>
+          <i class="devicon-javascript-plain colored"></i>JavaScript /{" "}
+          <i class="devicon-react-original colored"></i>React
+        </li>
+        <li>
+          <i class="devicon-illustrator-plain colored"></i>Illustrator /{" "}
+          <i class="devicon-photoshop-plain colored"></i>Photoshop
+        </li>
+        <li>
+          <i class="devicon-python-plain colored"></i>Python
+        </li>
+      </ul>
+
+      <h3 className="subheading">Want to Do</h3>
+      <ul>
+        <li>・ React Nativeでアプリ開発</li>
+        <li>・ サーバーサイドプログラミングの勉強</li>
       </ul>
     </div>
   )

@@ -7,7 +7,7 @@ const Hero = () => {
       <Typewriter
         onInit={typewriter => {
           typewriter
-            .typeString("Hello, I'm Atommy.<br> Welcome to My Portfolio!")
+            .typeString("Hello,<br>I'm Atommy.<br> Welcome to My Portfolio!")
             .pauseFor(2500)
             .deleteAll()
             .pauseFor(1000)
@@ -19,10 +19,10 @@ const Hero = () => {
             .start()
         }}
         options={{
-          wrapperClassName: "text-5xl font-ubuntu text-gold",
-          cursorClassName: "text-5xl Typewriter__cursor",
+          wrapperClassName: "text-6xl font-ubuntu text-gold",
+          cursorClassName: "text-6xl Typewriter__cursor",
           delay: 80,
-          deleteSpeed: 20,
+          deleteSpeed: 10,
         }}
       />
     </div>

@@ -17,13 +17,13 @@ const Header = () => {
         </div>
       </Link>
       <div className="flex items-center gap-3">
-        <AnchorLink offset="100" href="#works">
+        <AnchorLink offset="50" href="#works">
           <p className="underline">Works</p>
         </AnchorLink>
-        <AnchorLink offset="100" href="#about">
-          <p className="underline">About</p>
+        <AnchorLink offset="50" href="#profile">
+          <p className="underline">Profile</p>
         </AnchorLink>
-        <AnchorLink offset="100" href="#works">
+        <AnchorLink offset="50" href="#works">
           <p className="underline">Contact</p>
         </AnchorLink>
       </div>
