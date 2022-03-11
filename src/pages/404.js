@@ -16,7 +16,6 @@ export default function NotFound() {
       />
       <Layout>
         <Header isTop={false} />
-
         <h2 className="heading mt-10 text-red-500 mb-4">404 Not Found</h2>
         <p className="mb-4">お探しのページは見つかりませんでした。</p>
         <Link to="/">

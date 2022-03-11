@@ -27,7 +27,6 @@
 @layer base {
   * {
     font-family: "Noto Sans JP", sans-serif;
-    font-size: 16px;
   }
   code {
     padding: 0.2em 0.3em;

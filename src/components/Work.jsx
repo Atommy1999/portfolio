@@ -17,7 +17,7 @@ const Work = ({ img_url, title, subtitle, description }) => {
           <h3 className="tracking-widest text-gold text-xs font-medium title-font">
             {subtitle}
           </h3>
-          <h2 className="text-xl text-gray-900 font-medium title-font mb-3">
+          <h2 className="text-lg text-gray-900 font-medium title-font mb-3">
             {title}
           </h2>
           <p className="leading-relaxed text-md text-slate-500">

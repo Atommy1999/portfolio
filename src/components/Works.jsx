@@ -15,13 +15,13 @@ const Works = () => {
         <Work
           img_url={RAILWORD_IMAGE}
           title="テツドル - 駅名版Wordle"
-          subtitle="created by React"
+          subtitle="Created with React"
           description="Wordleにインスパイアされて制作した、駅名推測パズルゲーム。Reactを用いて実装。"
         />
         <Work
           img_url={OUWO_IMAGE}
           title="大阪大学吹奏楽団 Webサイト"
-          subtitle="created by Wordpress"
+          subtitle="Created with Wordpress"
           description="吹奏楽団のWebサイトを制作。演奏会に向けたブログの運営やサイトのデザインを担当"
         />
       </div>
