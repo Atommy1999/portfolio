@@ -7,13 +7,13 @@ const Contact = () => {
         Contact
       </h2>
       <form
-        className="contact_form grid grid-cols-contact grid-"
-        name="Contact Form"
-        method="POST"
+        className="contact_form grid grid-cols-contact"
+        name="contact"
+        method="post"
         data-netlify="true"
-        action="/pages/success"
+        action="/"
       >
-        <input type="hidden" name="form-name" value="Contact Form" />
+        <input type="hidden" name="form-name" value="contact" />
 
         <label className="label">Name</label>
         <input
