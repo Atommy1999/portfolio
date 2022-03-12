@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import Seo from "../components/Seo"
 import Layout from "../components/Layout"
@@ -21,32 +21,8 @@ export default function NotFound({ data }) {
         <Link to="/">
           <p className="text-indigo-500 underline">トップページへ</p>
         </Link>
-        <Works data={data} />
         <Footer />
       </Layout>
     </>
   )
 }
-
-export const query = graphql`
-  query allContentfulWorks {
-    allContentfulWorks {
-      edges {
-        node {
-          title
-          featuredImage {
-            title
-            file {
-              url
-            }
-          }
-          description {
-            description
-          }
-          createdWith
-          slug
-        }
-      }
-    }
-  }
-`
