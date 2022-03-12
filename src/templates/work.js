@@ -36,6 +36,7 @@ export default function Work({ pageContext }) {
         </div>
 
         <div className="markdown" dangerouslySetInnerHTML={{ __html: body }} />
+        <div className="h-16"></div>
 
         <Footer />
       </Layout>
