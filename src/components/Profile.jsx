@@ -39,8 +39,8 @@ const Profile = () => {
 
       <h3 className="subheading">Want to Do</h3>
       <ul>
-        <li>・ React Nativeでアプリ開発</li>
-        <li>・ サーバーサイドプログラミングの勉強</li>
+        <li className="mb-2">・ React Nativeでアプリ開発</li>
+        <li className="mb-2">・ サーバーサイドプログラミングの勉強</li>
       </ul>
     </div>
   )
