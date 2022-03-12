@@ -7,7 +7,7 @@ import Header from "../components/Header"
 import Works from "../components/Works"
 import Footer from "../components/Footer"
 
-export default function NotFound() {
+export default function NotFound({ data }) {
   return (
     <>
       <Seo
@@ -21,9 +21,32 @@ export default function NotFound() {
         <Link to="/">
           <p className="text-indigo-500 underline">トップページへ</p>
         </Link>
-        <Works />
+        <Works data={data} />
         <Footer />
       </Layout>
     </>
   )
 }
+
+export const query = graphql`
+  query allContentfulWorks {
+    allContentfulWorks {
+      edges {
+        node {
+          title
+          featuredImage {
+            title
+            file {
+              url
+            }
+          }
+          description {
+            description
+          }
+          createdWith
+          slug
+        }
+      }
+    }
+  }
+`
