@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import Seo from "../components/Seo"
 import Layout from "../components/Layout"
 import Header from "../components/Header"
-import Works from "../components/Works"
 import Footer from "../components/Footer"
 
 export default function NotFound({ data }) {
