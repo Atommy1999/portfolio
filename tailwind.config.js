@@ -6,6 +6,7 @@ module.exports = {
         orbitron: "Orbitron, sans-serif",
         noto: "'Noto Sans JP', sans-serif",
         ubuntu: "'Ubuntu Mono', monospace;",
+        karla: "'Karla', sans-serif;",
       },
       colors: {
         gold: "#caa846",
