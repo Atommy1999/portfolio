@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import Hero from "../components/Hero"
@@ -9,7 +10,7 @@ import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import Seo from "../components/Seo"
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <>
       <Seo
@@ -19,7 +20,7 @@ export default function Home() {
       <Layout>
         <Header isTop={true} />
         <Hero />
-        <Works />
+        <Works data={data} />
         <Profile />
         <Contact />
         <Footer />
@@ -27,3 +28,26 @@ export default function Home() {
     </>
   )
 }
+
+export const query = graphql`
+  query allContentfulWorks {
+    allContentfulWorks {
+      edges {
+        node {
+          title
+          featuredImage {
+            title
+            file {
+              url
+            }
+          }
+          description {
+            description
+          }
+          createdWith
+          slug
+        }
+      }
+    }
+  }
+`
