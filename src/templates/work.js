@@ -27,12 +27,12 @@ export default function Work({ pageContext }) {
             Posted on {updatedAt}
           </p>
         </div>
-        <div className="border-2 border-gold rounded-sm flex justify-center items-center mt-1 mb-10 py-10">
+        <div className="rounded-sm flex justify-center items-center mt-1 mb-10 py-10">
           <img
-            className="rounded-lg border-none w-3/4 max-w-xl"
+            className="rounded-lg border-none w-5/6 max-w-xl drop-shadow-md"
             src={featuredImage.file.url}
             alt="work-cover"
-          ></img>
+          />
         </div>
 
         <div className="markdown" dangerouslySetInnerHTML={{ __html: body }} />
