@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 import Layout from "../components/Layout"
 import Header from "../components/Header"
 import Works from "../components/Works"
@@ -10,7 +10,7 @@ import Footer from "../components/Footer"
 export default function NotFound() {
   return (
     <>
-      <SEO
+      <Seo
         title="Not Found"
         description="Atommy's Portfolio Site. Self-introductions and a collection of works are posted here."
       />

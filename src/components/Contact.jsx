@@ -19,31 +19,43 @@ const Contact = () => {
       >
         <input type="hidden" name="form-name" value="contact" />
 
-        <label className="label">Name</label>
+        <label className="label" htmlFor="name">
+          Name
+        </label>
         <input
           type="text"
           name="name"
+          id="name"
           className="contact__field input"
           placeholder="Your Name"
         ></input>
-        <label className="label">Email</label>
+        <label className="label" htmlFor="email">
+          Email
+        </label>
         <input
           name="email"
           type="email"
+          id="email"
           className="contact__field input"
           placeholder="example@domain.com"
         ></input>
 
-        <label className="label">Subject</label>
+        <label className="label" htmlFor="subject">
+          Subject
+        </label>
         <input
           name="subject"
+          id="subject"
           type="text"
           className="contact__field input"
           placeholder="Subject"
         ></input>
-        <label className="label">Message</label>
+        <label className="label" htmlFor="message">
+          Message
+        </label>
         <textarea
           name="message"
+          id="message"
           className="contact__field textarea"
           placeholder="Your Message"
         ></textarea>

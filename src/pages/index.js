@@ -7,12 +7,12 @@ import Works from "../components/Works"
 import Profile from "../components/Profile"
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 
 export default function Home() {
   return (
     <>
-      <SEO
+      <Seo
         title="Atommy's Portfolio"
         description="Atommy's Portfolio Site. Self-introductions and a collection of works are posted here."
       />
