@@ -9,7 +9,7 @@ const Works = ({ data }) => {
         Works
       </h2>
 
-      <div className="flex flex-wrap -m-4">
+      <div className="flex flex-wrap w-full">
         {data.allContentfulWorks.edges.map(edge => (
           <Work key={edge.node.slug} work={edge.node} />
         ))}
