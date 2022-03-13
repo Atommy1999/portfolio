@@ -7,7 +7,7 @@ const Work = ({ work }) => {
   const pageLink = `/work/${work.slug}`
 
   return (
-    <div className="group xl:w-1/4 md:w-1/2 w-full p-4">
+    <div className="group xl:w-1/4 md:w-1/2 w-full p-2">
       <Link to={pageLink}>
         <div class="relative top-0 bg-slate-100 p-6 rounded-lg shadow-md transition-all ease-out duration-300 hover:shadow-none hover:top-1">
           <div className="flex justify-center items-center overflow-hidden w-full h-40 rounded mb-6 ">
