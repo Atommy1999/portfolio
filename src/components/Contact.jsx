@@ -50,7 +50,7 @@ const Contact = () => {
           className="contact__field input"
           placeholder="Subject"
         ></input>
-        <label className="label" htmlFor="message">
+        <label className="label self-start mt-2 leading-7" htmlFor="message">
           Message
         </label>
         <textarea

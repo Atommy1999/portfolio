@@ -10,7 +10,7 @@ const Work = ({ work }) => {
     <div className="group xl:w-1/4 md:w-1/2 w-full p-2">
       <Link to={pageLink}>
         <div class="relative top-0 bg-slate-100 p-6 rounded-lg shadow-md transition-all ease-out duration-300 hover:shadow-none hover:top-1">
-          <div className="flex justify-center items-center overflow-hidden w-full h-40 rounded mb-6 ">
+          <div className="flex justify-center items-center overflow-hidden w-full h-40 rounded mb-6">
             <img
               className="rounded transition duration-300 group-hover:scale-105"
               src={featuredImage.file.url}
