@@ -20,7 +20,7 @@ export default function Work({ pageContext }) {
         title={`${title} | Atommy`}
         description={description}
         type="article"
-        page_url={`https://${domainName}/work/${slug}`}
+        page_url={`https://${domainName}/work/${slug}/`}
         img={featuredImage.file.url}
       />
       <Layout>

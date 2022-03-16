@@ -19,10 +19,9 @@ const Seo = ({ title, description, img, page_url, type }) => {
       <meta property="og:site_name" content={siteName} />
       <meta
         property="og:url"
-        content={page_url ? page_url : `https://${domainName}`}
+        content={page_url ? page_url : `https://${domainName}/`}
       ></meta>
       <meta property="og:image" content={img} />
-
       <meta name="twitter:card" content="summary_large_image" />
     </Helmet>
   )
