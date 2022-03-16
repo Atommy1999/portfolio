@@ -45,9 +45,13 @@ const Works = () => {
       </h2>
 
       <div className="flex flex-wrap w-full">
-        {edges.map(edge => (
-          <Work key={edge.node.slug} work={edge.node} />
-        ))}
+        {edges
+          .sort((a, b) => {
+            return a.node.order - b.node.order
+          })
+          .map(edge => (
+            <Work key={edge.node.slug} work={edge.node} />
+          ))}
       </div>
     </div>
   )
