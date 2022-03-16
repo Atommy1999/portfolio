@@ -10,11 +10,8 @@ import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import Seo from "../components/Seo"
 
-import OGP_DEFAULT_IMG from "../../static/default_ogp_image.png"
-
 export default function Home({ data }) {
   const { title, description, siteUrl } = data.site.siteMetadata
-  const img = `${siteUrl}${OGP_DEFAULT_IMG}`
 
   return (
     <>
@@ -23,7 +20,6 @@ export default function Home({ data }) {
         description={description}
         type="website"
         page_url={siteUrl}
-        img={img}
       />
       <Layout>
         <Header isTop={true} />

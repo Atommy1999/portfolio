@@ -1,22 +1,22 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import Seo from "../components/Seo"
 import Layout from "../components/Layout"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
-export default function NotFound() {
+export default function Success() {
   return (
     <>
       <Seo title="送信完了" type="article" />
       <Layout>
         <Header isTop={false} />
-        <span className="absolute top-10 -right-3 text-lg font-bold text-gold  font-orbitron rotate-90">
-          Sorry
+        <span className="absolute top-15 -right-3 text-lg font-bold text-gold  font-orbitron rotate-90">
+          Thank you
         </span>
-        <h2 className="heading mt-10 text-red-500 mb-4">404 Not Found</h2>
-        <p className="mb-4">お探しのページは見つかりませんでした。</p>
+        <h2 className="heading mt-10 text-gold mb-4 font-noto">送信完了</h2>
+        <p className="mb-4">お問い合わせありがとうございました。</p>
         <Link to="/" className="text-blue-600 no-underline">
           <p>トップページへ</p>
         </Link>
@@ -25,13 +25,3 @@ export default function NotFound() {
     </>
   )
 }
-
-export const query = graphql`
-  query page404 {
-    site {
-      siteMetadata {
-        siteUrl
-      }
-    }
-  }
-`

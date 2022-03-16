@@ -19,7 +19,7 @@ const Profile = () => {
       </p>
 
       <h3 className="subheading">Skills</h3>
-      <div className="flex flex-row flex-wrap justify-center gap-2 text-4xl mb-10 md:justify-start">
+      <div className="flex flex-row flex-wrap justify-center gap-2 text-4xl mt-7 mb-10 md:justify-start">
         <i class="devicon-html5-plain-wordmark colored"></i>
         <i class="devicon-css3-plain-wordmark colored"></i>
         <i class="devicon-javascript-plain colored"></i>

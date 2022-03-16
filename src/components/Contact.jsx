@@ -1,10 +1,11 @@
 import React from "react"
+import { navigate } from "gatsby"
 
 const Contact = () => {
-  const onSubmit = () => {
-    alert("送信が完了しました")
+  const onSubmit = event => {
+    event.preventDefault()
+    navigate("/success")
   }
-
   return (
     <div className="mb-20">
       <h2 className="contactHeader heading" id="contact">
@@ -15,7 +16,6 @@ const Contact = () => {
         name="contact"
         method="post"
         data-netlify="true"
-        action="/"
       >
         <input type="hidden" name="form-name" value="contact" />
 
@@ -28,6 +28,7 @@ const Contact = () => {
           id="name"
           className="contact__field input"
           placeholder="Your Name"
+          minlength={1}
         ></input>
         <label className="label" htmlFor="email">
           Email

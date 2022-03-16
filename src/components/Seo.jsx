@@ -2,6 +2,8 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+import OGP_DEFAULT_IMG from "../../static/default_ogp_image.png"
+
 const Seo = ({ title, description, img, page_url, type }) => {
   const data = useStaticQuery(graphql`
     query {
@@ -15,6 +17,7 @@ const Seo = ({ title, description, img, page_url, type }) => {
   `)
   const siteUrl = data.site.siteMetadata.siteUrl
   const siteName = data.site.siteMetadata.title
+  const img_url = img ? img : `${siteUrl}${OGP_DEFAULT_IMG}`
 
   return (
     <Helmet>
@@ -31,7 +34,7 @@ const Seo = ({ title, description, img, page_url, type }) => {
       <meta property="og:description" content={description} />
       <meta property="og:site_name" content={siteName} />
       <meta property="og:url" content={page_url ? page_url : siteUrl}></meta>
-      <meta property="og:image" content={img} />
+      <meta property="og:image" content={img_url} />
       <meta name="twitter:card" content="summary_large_image" />
     </Helmet>
   )
