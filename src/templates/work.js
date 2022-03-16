@@ -24,7 +24,7 @@ export default function Work({ pageContext }) {
       />
       <Layout>
         <Header />
-        <span className="absolute top-7 -right-3 text-lg font-bold text-gold  font-orbitron rotate-90">
+        <span className="absolute top-10 -right-3 text-lg font-bold text-gold font-orbitron rotate-90">
           Works
         </span>
         <div className="h-16"></div>

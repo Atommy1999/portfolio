@@ -12,7 +12,7 @@ export default function Success() {
       <Seo title="送信完了" type="article" />
       <Layout>
         <Header isTop={false} />
-        <span className="absolute top-15 -right-3 text-lg font-bold text-gold  font-orbitron rotate-90">
+        <span className="absolute top-14 -right-8 text-lg font-bold text-gold font-orbitron rotate-90">
           Thank you
         </span>
         <h2 className="heading mt-10 text-gold mb-4 font-noto">送信完了</h2>

@@ -12,7 +12,7 @@ export default function NotFound() {
       <Seo title="送信完了" type="article" />
       <Layout>
         <Header isTop={false} />
-        <span className="absolute top-10 -right-3 text-lg font-bold text-gold  font-orbitron rotate-90">
+        <span className="absolute top-8 -right-3 text-lg font-bold text-gold font-orbitron rotate-90">
           Sorry
         </span>
         <h2 className="heading mt-10 text-red-500 mb-4">404 Not Found</h2>
