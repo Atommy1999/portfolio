@@ -14,7 +14,7 @@ import OGP_DEFAULT_IMG from "../../static/OGP_card.png"
 
 export default function Home({ data }) {
   const { title, description, siteUrl } = data.site.siteMetadata
-  const img = `${siteUrl}/${OGP_DEFAULT_IMG}`
+  const img = `${siteUrl}${OGP_DEFAULT_IMG}`
 
   return (
     <>
