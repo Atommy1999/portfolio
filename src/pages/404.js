@@ -7,7 +7,7 @@ import Layout from "../components/Layout"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
-import OGP_DEFAULT_IMG from "../../static/OGP_card.png"
+import OGP_DEFAULT_IMG from "../../static/default_ogp_image.png"
 
 export default function NotFound({ data }) {
   const { siteUrl } = data.site.siteMetadata

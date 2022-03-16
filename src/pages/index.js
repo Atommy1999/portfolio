@@ -10,7 +10,7 @@ import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import Seo from "../components/Seo"
 
-import OGP_DEFAULT_IMG from "../../static/OGP_card.png"
+import OGP_DEFAULT_IMG from "../../static/default_ogp_image.png"
 
 export default function Home({ data }) {
   const { title, description, siteUrl } = data.site.siteMetadata
