@@ -28,7 +28,7 @@ export default function Home({ data }) {
       <Layout>
         <Header isTop={true} />
         <Hero />
-        <Works data={data} />
+        <Works />
         <Profile />
         <Contact />
         <Footer />
@@ -44,24 +44,6 @@ export const query = graphql`
         title
         description
         siteUrl
-      }
-    }
-    allContentfulWorks {
-      edges {
-        node {
-          title
-          featuredImage {
-            title
-            file {
-              url
-            }
-          }
-          description {
-            description
-          }
-          createdWith
-          slug
-        }
       }
     }
   }
