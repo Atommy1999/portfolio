@@ -11,7 +11,7 @@ import Footer from "../components/Footer"
 import Seo from "../components/Seo"
 
 import { siteDescription, siteName, domainName } from "../constants/siteConfig"
-import OGP_DEFAULT_IMG from "../../public/OGP_card.png"
+import OGP_DEFAULT_IMG from "../../static/OGP_card.png"
 
 export default function Home({ data }) {
   return (

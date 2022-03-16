@@ -6,7 +6,7 @@ import Layout from "../components/Layout"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
-import OGP_DEFAULT_IMG from "../../public/OGP_card.png"
+import OGP_DEFAULT_IMG from "../../static/OGP_card.png"
 
 export default function NotFound() {
   return (
