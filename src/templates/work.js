@@ -7,14 +7,22 @@ import Header from "../components/Header"
 import Layout from "../components/Layout"
 import Footer from "../components/Footer"
 
+import { domainName } from "../constants/siteConfig"
+
 export default function Work({ pageContext }) {
-  const { title, updatedAt, featuredImage } = pageContext.work
+  const { title, updatedAt, featuredImage, slug } = pageContext.work
   const description = pageContext.work.description.description
   const body = pageContext.work.body.childMarkdownRemark.html
 
   return (
     <>
-      <Seo title={`${title} | Atommy`} description={description} />
+      <Seo
+        title={`${title} | Atommy`}
+        description={description}
+        type="article"
+        page_url={`https://${domainName}/work/${slug}`}
+        img={featuredImage.file.url}
+      />
       <Layout>
         <Header />
         <span className="absolute top-7 -right-3 text-lg font-bold text-gold  font-orbitron rotate-90">

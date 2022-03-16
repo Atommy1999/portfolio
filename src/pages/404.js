@@ -6,12 +6,16 @@ import Layout from "../components/Layout"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
-export default function NotFound({ data }) {
+import OGP_DEFAULT_IMG from "../../public/OGP_card.png"
+
+export default function NotFound() {
   return (
     <>
       <Seo
         title="Not Found"
         description="Atommy's Portfolio Site. Self-introductions and a collection of works are posted here."
+        type="article"
+        img={OGP_DEFAULT_IMG}
       />
       <Layout>
         <Header isTop={false} />
