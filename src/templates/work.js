@@ -20,7 +20,7 @@ export default function Work({ pageContext }) {
         description={description}
         type="article"
         page_url={`${siteUrl}/work/${slug}/`}
-        img={featuredImage.file.url}
+        img={`https:${featuredImage.file.url}`}
       />
       <Layout>
         <Header />
