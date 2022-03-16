@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import Seo from "../components/Seo"
 import Layout from "../components/Layout"
@@ -8,14 +9,16 @@ import Footer from "../components/Footer"
 
 import OGP_DEFAULT_IMG from "../../static/OGP_card.png"
 
-export default function NotFound() {
+export default function NotFound({ data }) {
+  const { siteUrl } = data.site.siteMetadata
+  const img = `${siteUrl}${OGP_DEFAULT_IMG}`
   return (
     <>
       <Seo
         title="Not Found"
         description="Atommy's Portfolio Site. Self-introductions and a collection of works are posted here."
         type="article"
-        img={OGP_DEFAULT_IMG}
+        img={img}
       />
       <Layout>
         <Header isTop={false} />
@@ -29,3 +32,13 @@ export default function NotFound() {
     </>
   )
 }
+
+export const query = graphql`
+  query 404 {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
+  }
+`

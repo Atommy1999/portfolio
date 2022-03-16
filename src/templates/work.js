@@ -7,8 +7,6 @@ import Header from "../components/Header"
 import Layout from "../components/Layout"
 import Footer from "../components/Footer"
 
-import { domainName } from "../constants/siteConfig"
-
 export default function Work({ pageContext }) {
   const { title, updatedAt, featuredImage, slug } = pageContext.work
   const description = pageContext.work.description.description

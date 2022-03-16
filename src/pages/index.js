@@ -10,17 +10,19 @@ import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import Seo from "../components/Seo"
 
-import { siteDescription, siteName, domainName } from "../constants/siteConfig"
 import OGP_DEFAULT_IMG from "../../static/OGP_card.png"
 
 export default function Home({ data }) {
+  const { title, description, siteUrl } = data.site.siteMetadata
+  const img = `${siteUrl}/${OGP_DEFAULT_IMG}`
+
   return (
     <>
       <Seo
-        title={siteName}
-        description={siteDescription}
+        title={title}
+        description={description}
         type="website"
-        page_url={`https://${domainName}`}
+        page_url={siteUrl}
         img={OGP_DEFAULT_IMG}
       />
       <Layout>
@@ -36,7 +38,14 @@ export default function Home({ data }) {
 }
 
 export const query = graphql`
-  query allContentfulWorks {
+  query index {
+    site {
+      siteMetadata {
+        title
+        description
+        siteUrl
+      }
+    }
     allContentfulWorks {
       edges {
         node {

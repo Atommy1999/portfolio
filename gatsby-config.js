@@ -10,6 +10,11 @@ require("dotenv").config({
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `Atommy's Portfolio`,
+    siteUrl: `https://atommy.me`,
+    description: `Atommyのポートフォリオサイト`,
+  },
   plugins: [
     "gatsby-plugin-postcss",
     "gatsby-plugin-react-helmet",

@@ -4,6 +4,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const result = await graphql(`
     {
+      site {
+        siteMetadata {
+          siteUrl
+        }
+      }
       allContentfulWorks {
         edges {
           node {
@@ -35,12 +40,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   const { edges } = result.data.allContentfulWorks
+  const { siteUrl } = result.data.siteMetadata.siteUrl
 
   edges.forEach(edge => {
     createPage({
       path: `/work/${edge.node.slug}/`,
       component: path.resolve("./src/templates/work.js"),
-      context: { work: edge.node },
+      context: { work: edge.node, siteUrl: siteUrl },
     })
   })
 }
