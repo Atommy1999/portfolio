@@ -11,6 +11,7 @@ export default function Work({ pageContext }) {
   const { title, updatedAt, featuredImage, slug } = pageContext.work
   const description = pageContext.work.description.description
   const body = pageContext.work.body.childMarkdownRemark.html
+  const siteUrl = pageContext.siteUrl
 
   return (
     <>
@@ -18,7 +19,7 @@ export default function Work({ pageContext }) {
         title={`${title} | Atommy`}
         description={description}
         type="article"
-        page_url={`https://${domainName}/work/${slug}/`}
+        page_url={`${siteUrl}/work/${slug}/`}
         img={featuredImage.file.url}
       />
       <Layout>

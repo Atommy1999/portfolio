@@ -34,7 +34,7 @@ export default function NotFound({ data }) {
 }
 
 export const query = graphql`
-  query 404 {
+  query page404 {
     site {
       siteMetadata {
         siteUrl

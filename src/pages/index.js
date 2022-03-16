@@ -23,7 +23,7 @@ export default function Home({ data }) {
         description={description}
         type="website"
         page_url={siteUrl}
-        img={OGP_DEFAULT_IMG}
+        img={img}
       />
       <Layout>
         <Header isTop={true} />

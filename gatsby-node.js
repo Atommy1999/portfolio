@@ -40,7 +40,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   const { edges } = result.data.allContentfulWorks
-  const { siteUrl } = result.data.siteMetadata.siteUrl
+  const { siteUrl } = result.data.site.siteMetadata
 
   edges.forEach(edge => {
     createPage({
