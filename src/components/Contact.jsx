@@ -2,9 +2,6 @@ import React from "react"
 import { navigate } from "gatsby"
 
 const Contact = () => {
-  const onSubmit = event => {
-    navigate("/success")
-  }
   return (
     <div className="mb-20">
       <h2 className="contactHeader heading" id="contact">
@@ -15,6 +12,7 @@ const Contact = () => {
         name="contact"
         method="post"
         data-netlify="true"
+        action="/success"
       >
         <input type="hidden" name="form-name" value="contact" />
 
@@ -63,7 +61,6 @@ const Contact = () => {
         <button
           className="relative top-0 bg-gold text-white w-24 mt-2 p-1 place-self-end rounded drop-shadow-md transition-all duration-75 hover:top-px hover:drop-shadow-none"
           type="submit"
-          onClick={onSubmit}
         >
           Submit
         </button>
