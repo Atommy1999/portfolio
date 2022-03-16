@@ -3,7 +3,6 @@ import { navigate } from "gatsby"
 
 const Contact = () => {
   const onSubmit = event => {
-    event.preventDefault()
     navigate("/success")
   }
   return (
