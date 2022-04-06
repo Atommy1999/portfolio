@@ -32,6 +32,7 @@ const Profile = () => {
 
       <h3 className="subheading">Prospect</h3>
       <ul>
+        <li className="mb-2">・ 学習ブログサイト立ち上げ</li>
         <li className="mb-2">・ React Nativeでアプリ開発</li>
         <li className="mb-2">・ サーバーサイドプログラミングの勉強</li>
       </ul>
