@@ -1,5 +1,5 @@
 .markdown {
-  @apply leading-relaxed text-sm;
+  @apply leading-relaxed text-sm tracking-wide;
 }
 @screen sm {
   .markdown {
@@ -16,7 +16,6 @@
 .markdown h1 {
   @apply text-xl font-bold mt-8 mb-5;
 }
-
 .markdown h2 {
   @apply text-lg font-bold my-4;
 }

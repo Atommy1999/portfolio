@@ -19,14 +19,14 @@ const Work = ({ work }) => {
   }
 
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      variants={inView}
-      viewport={{ once: true }}
-      transition={{ delay: 0.25 }}
-    >
-      <div className="group xl:w-1/4 md:w-1/2 w-full p-2">
+    <div className="group w-full md:w-1/2 xl:w-1/4 p-2">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={inView}
+        viewport={{ once: true }}
+        transition={{ delay: 0.25 }}
+      >
         <Link to={pageLink}>
           <div class="relative top-0 bg-slate-100 p-6 rounded-lg shadow-md transition-all ease-out duration-300 hover:shadow-none hover:top-1">
             <div className="flex justify-center items-center overflow-hidden w-full h-40 rounded mb-6">
@@ -48,8 +48,8 @@ const Work = ({ work }) => {
             </p>
           </div>
         </Link>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   )
 }
 

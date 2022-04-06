@@ -44,7 +44,7 @@ const Works = () => {
         Works
       </h2>
 
-      <div className="flex flex-wrap w-full">
+      <div className="flex flex-row flex-wrap w-full">
         {edges
           .sort((a, b) => {
             return a.node.order - b.node.order
