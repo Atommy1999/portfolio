@@ -29,26 +29,6 @@ const Profile = () => {
         <i class="devicon-photoshop-plain colored"></i>
         <i class="devicon-python-plain-wordmark colored"></i>
       </div>
-      {/* <ul>
-        <li className="mb-2">
-          <i class="devicon-html5-plain-wordmark colored"></i>HTML5 /{" "}
-          <i class="devicon-css3-plain colored"></i>CSS3
-        </li>
-        <li className="mb-2">
-          <i class="devicon-javascript-plain colored"></i>JavaScript /{" "}
-          <i class="devicon-react-original colored"></i>React
-        </li>
-        <li className="mb-2">
-          <i class="devicon-wordpress-plain-wordmark colored"></i>
-        </li>
-        <li className="mb-2">
-          <i class="devicon-illustrator-plain colored"></i>Illustrator /{" "}
-          <i class="devicon-photoshop-plain colored"></i>Photoshop
-        </li>
-        <li className="mb-2">
-          <i class="devicon-python-plain-wordmark colored"></i>Python
-        </li>
-      </ul> */}
 
       <h3 className="subheading">Prospect</h3>
       <ul>
