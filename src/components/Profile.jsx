@@ -8,14 +8,13 @@ const Profile = () => {
       </h2>
       <h3 className="subheading">About Me</h3>
       <p className="mb-8">
-        大阪の大学に通う大学4年生。
+        こんにちは。Webサイトをご覧いただきありがとうございます。Atommyと申します。
         <br />
-        高校生の頃にプログラミングに興味を持ち、独学で勉強しているうちにWebプログラミングが好きになりました。
-        現在は<code>JavaScript</code>のフロントエンドフレームワークである
-        <code>React</code>
-        をメインに学習しています。
+        普段は大学生として神経生物学を学んだり、趣味でフルートやユーフォニアムを演奏したりしています。
         <br />
-        音楽が趣味で、フルートとユーフォニアムを11年ほど吹いています。
+        その一方、個人でWebサイトを作ったりパズルゲームを作ったりもしています。
+        <br />
+        することが多くて大変ですが、今後も楽しみながら開発を続けていきたいと思っています。
       </p>
 
       <h3 className="subheading">Skills</h3>
@@ -32,9 +31,8 @@ const Profile = () => {
 
       <h3 className="subheading">Prospect</h3>
       <ul>
-        <li className="mb-2">・ 学習ブログサイト立ち上げ</li>
-        <li className="mb-2">・ React Nativeでアプリ開発</li>
-        <li className="mb-2">・ サーバーサイドプログラミングの勉強</li>
+        <li className="mb-2">・ アプリを１つ作って公開する</li>
+        <li className="mb-2">・ サーバーサイドの学習</li>
       </ul>
     </div>
   )
