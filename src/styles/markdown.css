@@ -1,5 +1,5 @@
 .markdown {
-  @apply leading-relaxed text-sm tracking-wide;
+  @apply text-sm tracking-wide;
 }
 @screen sm {
   .markdown {
@@ -25,7 +25,7 @@
 
 /* Links */
 .markdown a {
-  @apply text-blue-600;
+  @apply text-blue-600 leading-8;
 }
 .markdown a:hover {
   @apply underline;
@@ -33,7 +33,7 @@
 
 /* Paragraph */
 .markdown p {
-  @apply mb-4 leading-6 text-justify;
+  @apply mb-4 text-justify leading-8;
 }
 
 /* Lists */
@@ -44,7 +44,7 @@
 .markdown li > p,
 .markdown ul > li,
 .markdown ol > li {
-  @apply mb-1;
+  @apply mb-1 leading-8;
 }
 .markdown ol {
   @apply list-decimal;

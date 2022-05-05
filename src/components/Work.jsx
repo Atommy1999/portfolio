@@ -31,7 +31,7 @@ const Work = ({ work }) => {
           <div class="relative top-0 bg-slate-100 p-6 rounded-lg shadow-md transition-all ease-out duration-300 hover:shadow-none hover:top-1">
             <div className="flex justify-center items-center overflow-hidden w-full h-40 rounded mb-6">
               <img
-                className="rounded transition duration-300 group-hover:scale-105"
+                className="rounded transition duration-300 group-hover:scale-95"
                 src={featuredImage.file.url}
                 alt="content"
               />
