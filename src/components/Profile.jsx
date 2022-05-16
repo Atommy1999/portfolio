@@ -24,7 +24,7 @@ const Profile = () => {
         <i class="devicon-javascript-plain colored"></i>
         <i class="devicon-react-original-wordmark colored"></i>
         <i class="devicon-gatsby-plain colored"></i>
-        {/* <i class="devicon-nextjs-original colored"></i> */}
+        <i class="devicon-nextjs-original colored"></i>
         <i class="devicon-wordpress-plain-wordmark colored"></i>
         <i class="devicon-illustrator-plain colored"></i>
         <i class="devicon-photoshop-plain colored"></i>
