@@ -64,6 +64,15 @@ const Contact = () => {
           Submit
         </button>
       </form>
+      <ul className="mt-6 list-disc list-inside">
+        <li>
+          お問い合わせの内容によっては、返答に時間がかかる場合があります。
+        </li>
+        <li>個人情報は厳密に管理し、第三者には開示いたしません。</li>
+        <li>
+          返信メールが届かない場合は、迷惑メールフィルタの設定をご確認ください。info[at]atommy.meを受信できるように設定をお願いいたします。
+        </li>
+      </ul>
     </div>
   )
 }
