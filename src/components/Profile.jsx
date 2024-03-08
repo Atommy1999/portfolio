@@ -7,14 +7,17 @@ const Profile = () => {
         Profile
       </h2>
       <h3 className="subheading">About Me</h3>
-      <p className="mb-8">
-        こんにちは。Webサイトをご覧いただきありがとうございます。Atommyと申します。
-        <br />
-        普段は大学生として神経生物学を学んだり、趣味でフルートやユーフォニアムを演奏したりしています。
-        <br />
-        その一方、個人でWebサイトを作ったりパズルゲームを作ったりもしています。
-        <br />
-        今後も楽しみながら開発を続けていきたいと思っています。
+      <p className="mb-1">
+        はじめまして。この度は私のポートフォリオサイトにお越しいただき、ありがとうございます。
+        </p><p className="mb-1">
+        私は現在、大学院で生命科学の研究を行っていますが、IT業界でキャリアを作りたいと考え就職活動を行っています。
+        </p><p className="mb-1">
+        大学学部時代、WebサイトやWebゲームの個人開発を行ってきました。
+        新しい知識や技術を学び、手を動かしてつくったものが動くことが私の喜びです。さらに、それで人に喜んでもらえたら、さらにうれしく思います。
+        </p><p className="mb-1">
+       また、小学生のころから12年間、フルートやユーフォニアムの演奏を続けてきました。楽器演奏を通じた自己表現は何事にも代えがたいものです。より良い演奏・表現を目指す試行錯誤の経験は、私の物事に対する取り組み方の根幹になっています。
+       </p><p className="mb-8">
+        今後もITの分野でさらなるスキルアップを目指し、社会に貢献できるような有意義な仕事をして行きたいと考えています。
       </p>
 
       <h3 className="subheading">Skills</h3>
@@ -29,12 +32,13 @@ const Profile = () => {
         <i class="devicon-illustrator-plain colored"></i>
         <i class="devicon-photoshop-plain colored"></i>
         <i class="devicon-python-plain-wordmark colored"></i>
+
       </div>
 
       <h3 className="subheading">Prospect</h3>
       <ul>
+        <li className="mb-2">・ サーバーサイド技術の学習</li>
         <li className="mb-2">・ アプリを１つ作って公開する</li>
-        <li className="mb-2">・ サーバーサイドの学習</li>
       </ul>
     </div>
   )
